@@ -1,0 +1,13 @@
+.content {
+  padding: 1.5rem;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
