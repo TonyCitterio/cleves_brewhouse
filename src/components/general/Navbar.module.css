@@ -1,6 +1,7 @@
-nav {
-  padding: 20px 10px;
-  background-color: #ebf2fa;
+.navbar {
+  padding: 10px;
+  background: linear-gradient(to left bottom, #696969, #ffffff);
+  color: #333333;
   display: flex;
   justify-content: space-between;
 }
@@ -33,6 +34,6 @@ nav {
 
 .icon {
   font-size: 35px;
-  color: white;
+  color: #333333;
   margin-right: 1.2rem;
 }
