@@ -1,22 +1,19 @@
 import classes from "./Footer.module.css";
+import clevesBrewHouse from "../pictures/thumbnail_Cleves Brewhouse1.jpg"
 
 const Footer = () => {
   return (
-    <section className={classes.footer}>
+    <div className={classes.footer}>
       <div>
-        <h1 className={classes.heading}>
-          Cleves
-          <span>Brew</span>
-          <span>House</span>
-        </h1>
+      <img src={clevesBrewHouse} alt="logo" height={89} width={89}></img>
       </div>
-      <div className={classes.center}>
+      <div>
         <p>Från en ölälskare till en annan!</p>
       </div>
-      <div className={classes.center}>
+      <div>
         <p>Från en ölälskare till en annan!</p>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -2,22 +2,7 @@
   padding: 10px;
   display: flex;
   justify-content: space-around;
-  background-color: #333333;
-  color: white;
-}
-
-.heading {
-  letter-spacing: 0.2em;
-  text-align: center;
-  font-family: "Rubik", sans-serif;
-  font-size: 1em;
-}
-
-.heading span {
-  display: block;
-}
-
-.center {
-  display: flex;
   align-items: center;
+  background-color: black;
+  color: green;
 }
