@@ -1,13 +1,19 @@
-import Footer from "./components/general/Footer";
-import Navbar from "./components/general/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/views/Layout";
 import Home from "./components/views/Home";
+import HowToBrew from "./components/views/HowToBrew";
 
 function App() {
   return (
     <>
-    <Navbar />
-    <Home />
-    <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="howToBrew" element={<HowToBrew />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
