@@ -1,4 +1,4 @@
-.content {
+.introHowToBrew {
   padding-top: 1.5rem;
   color: #333333;
   display: flex;
@@ -6,7 +6,7 @@
   background-color: #d2d7df;
 }
 
-.content > *:nth-child(1) {
+.introHowToBrew > *:nth-child(1) {
   padding: 3rem;
   flex: 1 1 40%;
   min-width: 25ch;
@@ -14,7 +14,7 @@
   justify-content: flex-end;
 }
 
-.content > *:nth-child(2) {
+.introHowToBrew > *:nth-child(2) {
   padding: 3rem;
   flex: 1 1 60%;
   min-width: 35ch;
@@ -39,9 +39,10 @@
   border-bottom: 1px solid gray;
 }
 
-.container {
+.containerSteps {
   padding-top: 3rem;
   padding-bottom: 4rem;
+  color: #333333;
   display: flex;
   gap: 1em;
   flex-direction: column;
@@ -50,7 +51,7 @@
   background-color: #d2d7df;
 }
 
-.intro {
+.introSteps {
   width: 60%;
   margin-bottom: 1.5rem;
 }

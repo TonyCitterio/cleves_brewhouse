@@ -1,0 +1,44 @@
+.introMyBeer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: bisque;
+  color: #333333;
+}
+
+.introMyBeer > *:nth-child(1) {
+  padding: 3rem;
+  flex: 1 1 40%;
+  min-width: 30ch;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.introMyBeer > *:nth-child(2) {
+  padding: 3rem;
+  flex: 1 1 60%;
+  min-width: 35ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentMyBeer {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentMyBeerLabel {
+    padding: 1rem;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.contentMyBeer img {
+    padding: 1rem;
+}
