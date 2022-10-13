@@ -1,3 +1,33 @@
+.introHowToBrew h1 {
+  margin-bottom: 0.2rem;
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.ingredients h2 {
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.ingredients h3,
+.containerSteps h3 {
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.containerSteps h2 {
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.howToBrewText {
+  line-height: 2em;
+}
+
 .introHowToBrew {
   padding-top: 1.5rem;
   color: #333333;
@@ -8,15 +38,15 @@
 
 .introHowToBrew > *:nth-child(1) {
   padding: 3rem;
-  flex: 1 1 40%;
-  min-width: 25ch;
+  flex: 1 1 45%;
+  min-width: 30ch;
   display: flex;
   justify-content: flex-end;
 }
 
 .introHowToBrew > *:nth-child(2) {
   padding: 3rem;
-  flex: 1 1 60%;
+  flex: 1 1 55%;
   min-width: 35ch;
   display: flex;
   flex-direction: column;
@@ -34,9 +64,9 @@
 }
 
 .ingredients > div {
+  position: relative;
   width: 50%;
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid gray;
 }
 
 .containerSteps {
@@ -66,5 +96,6 @@
 .steps > * {
   padding: 1rem;
   flex: 1 1 25rem;
-  border: 1px solid gray;
+  
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }

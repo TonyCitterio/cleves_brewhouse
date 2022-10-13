@@ -9,13 +9,13 @@ const MyBeer = () => {
     <>
       <div className={classes.introMyBeer}>
         <div>
-          <img src={brewZilla} alt="brewZilla" height={450} width={470}></img>
+          <img src={brewZilla} alt="brewZilla" height={430} width={450}></img>
         </div>
         <div>
           <h1>Mina olika öl</h1>
-          <p>
+          <p className={classes.myBeerText}>
             Jag brygde min första öl 2012. Sedan dess har jag bryggt ett antal
-            olika sorters öl. Jag tycker om att exprimentera mig fram och är
+            olika sorters öl. <br></br> Jag tycker om att exprimentera mig fram och är
             inte rädd för att prova nya saker för att få fram goda smarker på
             ölet.
           </p>
