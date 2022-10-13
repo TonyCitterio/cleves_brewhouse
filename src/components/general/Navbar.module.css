@@ -33,3 +33,9 @@
   color: green;
   margin-right: 1.2rem;
 }
+
+@media (max-width: 599px) {
+  .link {
+    display: none;
+  }
+}
