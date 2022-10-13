@@ -1,7 +1,6 @@
 .navbar {
   padding: 10px;
   background-color: black;
-  color: orange;
   display: flex;
   justify-content: space-between;
 }
@@ -19,10 +18,16 @@
 }
 
 .linkStyle {
-  font-family: 'Rubik Dirt', cursive, sans-serif;
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   text-decoration: none;
   color: orange;
+  transition: 0.3s 0.3s;
+}
+
+.linkStyle:hover {
+  color: green;
 }
 
 .contact {
@@ -33,7 +38,7 @@
 .icon {
   font-size: 35px;
   color: green;
-  margin-right: 1.2rem;
+  margin-right: 1.25rem;
 }
 
 @media (max-width: 599px) {
