@@ -6,8 +6,8 @@ import clevesBrewHouse from "../pictures/thumbnail_Cleves Brewhouse1.jpg";
 const Navbar = () => {
   return (
     <section className={classes.navbar}>
-      <div>
-        <img src={clevesBrewHouse} alt="logo" height={175} width={175}></img>
+      <div className={classes.navbarImg}>
+        <img src={clevesBrewHouse} alt="logo" height={170} width={170}></img>
       </div>
       <div className={classes.link}>
         <Link className={classes.linkStyle} to="/">

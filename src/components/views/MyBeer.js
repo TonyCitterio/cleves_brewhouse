@@ -22,7 +22,7 @@ const MyBeer = () => {
         </div>
       </div>
       <div className={classes.contentMyBeer}>
-        <h2>Ölen</h2>
+        <h2>Di gode</h2>
         <div className={classes.contentMyBeerLabel}>
         <img src={beerOne} alt="beer label" height={200} width={200}></img>
         <img src={beerTwo} alt="beer label" height={200} width={200}></img>
