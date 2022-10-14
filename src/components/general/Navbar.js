@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import { IoMail } from "react-icons/io5";
+import { ImMail3 } from "react-icons/im";
 import classes from "./Navbar.module.css";
 import clevesBrewHouse from "../pictures/thumbnail_Cleves Brewhouse1.jpg";
 
 const Navbar = () => {
   return (
     <section className={classes.navbar}>
-      <div>
-        <img src={clevesBrewHouse} alt="logo" height={175} width={175}></img>
+      <div className={classes.navbarImg}>
+        <img src={clevesBrewHouse} alt="logo" height={170} width={170}></img>
       </div>
       <div className={classes.link}>
         <Link className={classes.linkStyle} to="/">
@@ -21,7 +21,8 @@ const Navbar = () => {
       </div>
       <div className={classes.contact}>
         <a href="mailto:tcitterio@hotmail.com">
-          <IoMail className={classes.icon} />
+          <ImMail3 className={classes.icon} />
+        
         </a>
       </div>
     </section>
