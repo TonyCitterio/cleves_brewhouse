@@ -1,12 +1,12 @@
 import classes from "./HowToBrew.module.css";
-import picture from "../pictures/pexels-elevate-1267330.jpg";
+import ingredients from "../pictures/ingredients.jpeg"
 
 const HowToBrew = () => {
   return (
     <>
       <div className={classes.introHowToBrew}>
         <div>
-          <img src={picture} alt="beer barrel" height={300} width={350}></img>
+          <img src={ingredients} alt="beer barrel" height={360} width={450}></img>
         </div>
         <div>
           <h1>Från idé till glas</h1>
@@ -51,7 +51,7 @@ const HowToBrew = () => {
       </div>
       <div className={classes.containerSteps}>
         <div className={classes.introSteps}>
-          <h2>Steg för steg hur man brygger.</h2>
+          <h2> Processen steg för steg.</h2>
           <p className={classes.howToBrewText}>
             Vare sig om du vill brygga 25 liter eller 800 liter är
             bryggeriprocessen densamma, detsamma gäller för tiden att mäska och

@@ -1,17 +1,25 @@
 .introMyBeer h1 {
   margin-bottom: 0.2rem;
-  font-family: 'Rubik Dirt', cursive, sans-serif;
+  font-family: "Rubik Dirt", cursive, sans-serif;
   font-size: 2.8rem;
   font-weight: 400;
 }
 
 .contentMyBeer h2 {
-  font-family: 'Rubik Dirt', cursive, sans-serif;
+  font-family: "Rubik Dirt", cursive, sans-serif;
   font-size: 2rem;
   font-weight: 400;
 }
+
 .myBeerText {
   line-height: 2em;
+}
+
+.contentMyBeer p {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  z-index: 1;
+  font-size: 1.5rem;
 }
 
 .introMyBeer {
@@ -47,8 +55,18 @@
   align-items: center;
 }
 
+.myBeerYet {
+  position: relative;
+  top: -70px;
+  z-index: -1;
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 5.5rem;
+  font-weight: 400;
+  transform: rotate(330deg);
+  color: #3333332d;
+}
+
 .contentMyBeerLabel {
-  padding: 1rem;
   width: 90%;
   display: flex;
   flex-wrap: wrap;

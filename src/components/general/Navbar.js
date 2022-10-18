@@ -17,7 +17,7 @@ const Navbar = () => {
           Processen
         </Link>
         <Link className={classes.linkStyle} to ="brewery">Bryggeri</Link>
-        <Link className={classes.linkStyle} to="myBeer">Mina öl</Link>
+        <Link className={classes.linkStyle} to="myBeer">Bryggeriets öl</Link>
       </div>
       <div className={classes.contact}>
         <a href="mailto:tcitterio@hotmail.com">
