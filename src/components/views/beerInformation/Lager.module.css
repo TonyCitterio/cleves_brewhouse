@@ -1,0 +1,96 @@
+.lagerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lagerLink {
+  width: 80%;
+  margin: 2rem 0;
+}
+
+.lagerLinkStyle {
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: green;
+  text-shadow: 3px 3px rgba(0, 128, 0, 0.076);
+  transition: 0.12s 0.12s;
+}
+
+.lagerLinkStyle:hover {
+  color: orange;
+  text-shadow: 3px 3px rgba(255, 166, 0, 0.322);
+}
+
+.lagerContent {
+  margin-bottom: 5rem;
+  padding: 2rem;
+  width: 80%;
+  color: #333333;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.lagerIntro {
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.lagerIntro img {
+  margin: 2rem 3rem;
+}
+
+.lagerIntro h1 {
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.lagerInfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lagerInfo > *:nth-child(1) {
+  padding: 3rem;
+  flex: 1 1 45%;
+  min-width: 25ch;
+}
+
+.lagerInfo > *:nth-child(2) {
+  padding: 3rem;
+  flex: 1 1 55%;
+  background-color: #d2d7df;
+}
+
+.lagerInfo h2 {
+  margin-bottom: 2.25rem;
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.lagerInfo ul {
+  padding: 0;
+  list-style: none;
+}
+
+.lagerInfo li span {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: green;
+}
+
+.lagerInfo li {
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px dashed #333333;
+}

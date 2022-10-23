@@ -23,6 +23,7 @@
 }
 
 .introMyBeer {
+  padding: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   background-color: #d2d7df;
@@ -45,6 +46,11 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.introMyBeer img {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
 
 .contentMyBeer {
   padding: 4rem;

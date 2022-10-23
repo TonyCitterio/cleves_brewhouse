@@ -22,7 +22,6 @@ const Navbar = () => {
       <div className={classes.contact}>
         <a href="mailto:tcitterio@hotmail.com">
           <ImMail3 className={classes.icon} />
-        
         </a>
       </div>
     </section>
