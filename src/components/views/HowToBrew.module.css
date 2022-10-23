@@ -29,7 +29,7 @@
 }
 
 .introHowToBrew {
-  padding-top: 1.5rem;
+  padding: 2rem 0;
   color: #333333;
   display: flex;
   flex-wrap: wrap;
@@ -53,6 +53,10 @@
   justify-content: center;
 }
 
+.introHowToBrew img {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+ 
 .ingredients {
   margin: 2rem 0;
   padding: 2.75rem 2rem;
@@ -96,6 +100,5 @@
 .steps > * {
   padding: 1rem;
   flex: 1 1 25rem;
-
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }

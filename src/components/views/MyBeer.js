@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import classes from "./MyBeer.module.css";
-import cleveskoldskaLagern from "../pictures/dencleceskoldskalagern.jpeg"
+import cleveskoldskaLagern from "../pictures/dencleceskoldskalagern.jpeg";
 import beerOne from "../pictures/lottas-bjorkstadens-jul-ale.png";
 import beerTwo from "../pictures/lottas-bjorkstadens-special-irish-red.png";
 import beerThree from "../pictures/lottas-bjorkstadens-vinter-lager.png";
@@ -10,7 +11,12 @@ const MyBeer = () => {
     <>
       <div className={classes.introMyBeer}>
         <div>
-          <img src={cleveskoldskaLagern} alt="Den Clevesköldska Lagern" height={360} width={440}></img>
+          <img
+            src={cleveskoldskaLagern}
+            alt="Den Clevesköldska Lagern"
+            height={360}
+            width={440}
+          ></img>
         </div>
         <div>
           <h1>Bryggeriets öl</h1>
@@ -27,10 +33,18 @@ const MyBeer = () => {
         <p>Delas bara i slutna sällskap!</p>
         <span className={classes.myBeerYet}>Än</span>
         <div className={classes.contentMyBeerLabel}>
-          <img src={beerOne} alt="beer label" height={200} width={200}></img>
-          <img src={beerTwo} alt="beer label" height={200} width={200}></img>
-          <img src={beerThree} alt="beer label" height={200} width={200}></img>
-          <img src={beerFour} alt="beer label" height={200} width={200}></img>
+          <Link to="/porter">
+            <img src={beerFour} alt="beer label" height={200} width={200}></img>
+          </Link>
+          <Link to="/sourAle">
+            <img src={beerTwo} alt="beer label" height={200} width={200}></img>
+          </Link>
+          <Link to="/christmas">
+            <img src={beerOne} alt="beer label" height={200} width={200}></img>
+          </Link>
+          <Link to="/lager">
+            <img src={beerThree} alt="beer label" height={200} width={200}></img>
+          </Link>
         </div>
       </div>
     </>
