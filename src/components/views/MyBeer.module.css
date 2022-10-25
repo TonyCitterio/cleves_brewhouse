@@ -51,9 +51,9 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-
 .contentMyBeer {
-  padding: 4rem;
+  margin-top: 4rem;
+  padding: 1.25rem;
   color: #333333;
   display: flex;
   flex-direction: column;
@@ -72,13 +72,32 @@
   color: #3333332d;
 }
 
-.contentMyBeerLabel {
-  width: 90%;
+.myBeerLink {
+  margin-bottom: 8.75rem;
+  text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
 }
 
-.contentMyBeer img {
-  padding: 1rem;
+.myBeerLinkStyleOne img, .myBeerLinkStyleTwo img, .myBeerLinkStyleThree img, .myBeerLinkStyleFour img  {
+  transition: box-shadow 0.15s 0.15s;
+} 
+
+.myBeerLinkStyleOne img:hover {
+  box-shadow: #5c5552 0px 7px 15px;
+}
+
+.myBeerLinkStyleTwo img:hover {
+  box-shadow: #f77f00 0px 7px 15px; 
+}
+
+.myBeerLinkStyleThree img:hover {
+  box-shadow: #ba181b 0px 7px 15px;
+}
+
+.myBeerLinkStyleFour img:hover {
+  box-shadow: #06aed5 0px 7px 15px;
 }
