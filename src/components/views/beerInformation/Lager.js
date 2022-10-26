@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import classes from "./Lager.module.css";
-import beerlabel from "../../pictures/lottas-bjorkstadens-vinter-lager.png";
-import background from "../../pictures/dencleceskoldskalagern.jpeg"
+import beerlabel from "../../pictures/etikett lager.jpg";
+import background from "../../pictures/dencleceskoldskalagern.jpeg";
 
 const Lager = () => {
   return (
@@ -14,18 +14,23 @@ const Lager = () => {
         </div>
         <div className={classes.lagerContent}>
           <div className={classes.lagerIntro}>
-            <img
-              src={beerlabel}
-              alt="beer label"
-              height={200}
-              width={200}
-            ></img>
             <div>
-              <h1>Den Clevesköldska Lagern</h1>
-              <p>
-                En oktober öl i Bayersk still där torrhumlingen gör underverk
-                med aromerna.
-              </p>
+              <img
+                src={beerlabel}
+                alt="beer label"
+                height={180}
+                width={180}
+              ></img>
+            </div>
+            <div>
+              <div>
+                <h1>Den Clevesköldska Lagern</h1>
+                <p>
+                  Den Clevesköldska lagern utmanar den traditionella stilen med
+                  nya humlesorter från Nya Zeeland och den amerikanska
+                  västkosten.
+                </p>
+              </div>
             </div>
           </div>
           <div className={classes.lagerInfo}>

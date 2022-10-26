@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import classes from "./Christmas.module.css";
-import beerLabel from "../../pictures/lottas-bjorkstadens-jul-ale.png";
-import background from "../../pictures/clevestomte-ishPorter.jpeg"
+import beerLabel from "../../pictures/etikett tomte.jpg";
+import background from "../../pictures/clevestomte-ishPorter.jpeg";
 
 const Christmas = () => {
   return (
@@ -14,15 +14,22 @@ const Christmas = () => {
         </div>
         <div className={classes.christmasContent}>
           <div className={classes.christmasIntro}>
-            <img
-              src={beerLabel}
-              alt="beer label"
-              height={200}
-              width={200}
-            ></img>
             <div>
-              <h1>Cleves Tomte-ish Porter</h1>
-              <p>Ett mustigt julöl med toner av härligt julgodis!</p>
+              <img
+                src={beerLabel}
+                alt="beer label"
+                height={180}
+                width={180}
+              ></img>
+            </div>
+            <div>
+              <div>
+                <h1>Cleves Tomte-ish Porter</h1>
+                <p>
+                  En Porter lika autentisk och god som vanlig dock med en svensk
+                  julig twist i form av en rejäl mängd skumtomtar!
+                </p>
+              </div>
             </div>
           </div>
           <div className={classes.christmasInfo}>
@@ -32,8 +39,7 @@ const Christmas = () => {
                 backgroundSize: `cover`,
                 backgroundPosition: `center`,
               }}
-            >
-            </div>
+            ></div>
             <div>
               <h2>Information om ölen</h2>
               {

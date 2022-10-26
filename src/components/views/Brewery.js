@@ -47,6 +47,9 @@ const Brewery = () => {
           <div>
             <img src={dens} alt="testing density beer"></img>
           </div>
+          <div>
+            <img src={dens} alt="testing density beer"></img>
+          </div>
         </div>
       </div>
     </>

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import classes from "./MyBeer.module.css";
-import cleveskoldskaLagern from "../pictures/dencleceskoldskalagern.jpeg";
-import beerOne from "../pictures/lottas-bjorkstadens-jul-ale.png";
-import beerTwo from "../pictures/lottas-bjorkstadens-special-irish-red.png";
-import beerThree from "../pictures/lottas-bjorkstadens-vinter-lager.png";
-import beerFour from "../pictures/lottas-dubbelpils-600px.png";
+import ingredients from "../pictures/ingredients.jpeg";
+import beerOne from "../pictures/etikett tomte.jpg";
+import beerTwo from "../pictures/etikett sur.jpg";
+import beerThree from "../pictures/etikett lager.jpg";
+import beerFour from "../pictures/etikett milkshake.jpg";
 
 const MyBeer = () => {
   return (
@@ -12,10 +12,10 @@ const MyBeer = () => {
       <div className={classes.introMyBeer}>
         <div>
           <img
-            src={cleveskoldskaLagern}
+            src={ingredients}
             alt="Den Clevesköldska Lagern"
             height={360}
-            width={440}
+            width={450}
           ></img>
         </div>
         <div>
@@ -32,20 +32,20 @@ const MyBeer = () => {
         <h2>Här hittar du Cleves BrewHouse öl</h2>
         <p>Delas bara i slutna sällskap!</p>
         <span className={classes.myBeerYet}>Än</span>
-        <div className={classes.contentMyBeerLabel}>
-          <Link to="/porter">
-            <img src={beerFour} alt="beer label" height={200} width={200}></img>
-          </Link>
-          <Link to="/sourAle">
-            <img src={beerTwo} alt="beer label" height={200} width={200}></img>
-          </Link>
-          <Link to="/christmas">
-            <img src={beerOne} alt="beer label" height={200} width={200}></img>
-          </Link>
-          <Link to="/lager">
-            <img src={beerThree} alt="beer label" height={200} width={200}></img>
-          </Link>
-        </div>
+      </div>
+      <div className={classes.myBeerLink}>
+        <Link className={classes.myBeerLinkStyleOne} to="/porter">
+          <img src={beerFour} alt="beer label" height={180} width={180}></img>
+        </Link>
+        <Link className={classes.myBeerLinkStyleTwo} to="/sourAle">
+          <img src={beerTwo} alt="beer label" height={180} width={180}></img>
+        </Link>
+        <Link className={classes.myBeerLinkStyleThree} to="/christmas">
+          <img src={beerOne} alt="beer label" height={180} width={180}></img>
+        </Link>
+        <Link className={classes.myBeerLinkStyleFour} to="/lager">
+          <img src={beerThree} alt="beer label" height={180} width={180}></img>
+        </Link>
       </div>
     </>
   );
