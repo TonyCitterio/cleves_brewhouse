@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import classes from "./MyBeer.module.css";
-import ingredients from "../pictures/ingredients.jpeg";
+import lager from "../pictures/dencleceskoldskalagern.jpeg";
 import beerOne from "../pictures/etikett tomte.jpg";
 import beerTwo from "../pictures/etikett sur.jpg";
 import beerThree from "../pictures/etikett lager.jpg";
@@ -12,7 +12,7 @@ const MyBeer = () => {
       <div className={classes.introMyBeer}>
         <div>
           <img
-            src={ingredients}
+            src={lager}
             alt="Den Clevesköldska Lagern"
             height={360}
             width={450}
