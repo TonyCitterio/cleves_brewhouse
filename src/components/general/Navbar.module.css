@@ -10,6 +10,53 @@
   display: flex;
 }
 
+.dropdownIcon {
+  padding: 0;
+  margin-right: 1rem;
+  background-color: transparent;
+  color: green;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  color: green;
+}
+
+.dropdownMenu {
+  width: 155px;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.25rem);
+  background-color: #333333;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(255, 255, 255, 0.741) 0px 5px 15px 0px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 170ms ease-in-out;
+}
+
+.dropdown > button:focus + .dropdownMenu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdownLink {
+  margin-bottom: 0.5em;
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  color: orange;
+}
+
+.dropdownLink:focus {
+  pointer-events: auto;
+}
+
 .link {
   padding-right: 1.75rem;
   display: flex;
@@ -40,8 +87,6 @@
 }
 
 .icon {
-  height: 35px;
-  width: 35px;
   color: green;
 }
 
