@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ImMail3 } from "react-icons/im";
+import { MdArrowDropDownCircle } from "react-icons/md";
 import classes from "./Navbar.module.css";
 import clevesBrewHouse from "../pictures/thumbnail_Cleves Brewhouse1.jpg";
 
@@ -8,6 +9,9 @@ const Navbar = () => {
     <section className={classes.navbar}>
       <div className={classes.navbarImg}>
         <img src={clevesBrewHouse} alt="logo" height={170} width={170}></img>
+      </div>
+      <div>
+        <button><MdArrowDropDownCircle /></button>
       </div>
       <div className={classes.link}>
         <Link className={classes.linkStyle} to="/">
