@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import classes from "./Christmas.module.css";
 import beerLabel from "../../pictures/etikett tomte.jpg";
-import background from "../../pictures/clevestomte-ishPorter.jpeg";
+import background from "../../pictures/thumbnail_IMG_2177.jpg";
 
 const Christmas = () => {
   return (
@@ -18,32 +18,32 @@ const Christmas = () => {
               <img
                 src={beerLabel}
                 alt="beer label"
-                height={180}
-                width={180}
+                height={190}
+                width={190}
               ></img>
             </div>
             <div>
               <div>
                 <h1>Cleves Tomte-ish Porter</h1>
-                <p>
+                <p className={classes.christmasText}>
                   En Porter lika autentisk och god som vanlig dock med en svensk
                   julig twist i form av en rejäl mängd skumtomtar!
                 </p>
               </div>
             </div>
           </div>
-          <div className={classes.christmasInfo}>
-            <div
-              style={{
-                backgroundImage: `url( ${background} )`,
-                backgroundSize: `cover`,
-                backgroundPosition: `center`,
-              }}
-            ></div>
-            <div>
-              <h2>Information om ölen</h2>
-              {
-                <ul>
+          <div className={classes.christmasInfoContainer}>
+            <div className={classes.christmasInfo}>
+              <div
+                style={{
+                  backgroundImage: `url( ${background} )`,
+                  backgroundSize: `cover`,
+                  backgroundPosition: `center`,
+                }}
+              ></div>
+              <div>
+                <h2>Information om ölen</h2>
+                <ul className={classes.christmasUlText}>
                   <li>
                     <span>Färg:</span>Nyponröd kopparton med krämigt vitt skum.
                   </li>
@@ -74,7 +74,7 @@ const Christmas = () => {
                     <span>Restextrakt:</span>4.0%
                   </li>
                 </ul>
-              }
+              </div>
             </div>
           </div>
         </div>

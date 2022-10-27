@@ -69,7 +69,7 @@
   font-size: 5.5rem;
   font-weight: 400;
   transform: rotate(330deg);
-  color: #3333332d;
+  color: #f780007c;
 }
 
 .myBeerLink {
@@ -82,16 +82,19 @@
   gap: 1.25rem;
 }
 
-.myBeerLinkStyleOne img, .myBeerLinkStyleTwo img, .myBeerLinkStyleThree img, .myBeerLinkStyleFour img  {
+.myBeerLinkStyleOne img,
+.myBeerLinkStyleTwo img,
+.myBeerLinkStyleThree img,
+.myBeerLinkStyleFour img {
   transition: box-shadow 0.15s 0.15s;
-} 
+}
 
 .myBeerLinkStyleOne img:hover {
   box-shadow: #5c5552 0px 7px 15px;
 }
 
 .myBeerLinkStyleTwo img:hover {
-  box-shadow: #f77f00 0px 7px 15px; 
+  box-shadow: #f77f00 0px 7px 15px;
 }
 
 .myBeerLinkStyleThree img:hover {

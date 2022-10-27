@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.sourAleText {
+  line-height: 2em;
+}
+
+.sourAleUlText {
+  line-height: 1.5em;
+}
+
 .sourAleLink {
   width: 80%;
   margin: 2rem 0;
@@ -65,27 +73,34 @@
   font-weight: 400;
 }
 
+.sourAleInfoContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .sourAleInfo {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .sourAleInfo > *:nth-child(1) {
-  padding: 3rem;
-  flex: 1 1 45%;
-  min-width: 25ch;
+  min-height: 750px;
+  padding: 10rem;
+  flex: 1 1 40%;
+  min-width: 30ch;
 }
 
 .sourAleInfo > *:nth-child(2) {
   padding: 3rem;
-  flex: 1 1 55%;
+  flex: 1 1 60%;
   background-color: #d2d7df;
 }
 
 .sourAleInfo h2 {
-  margin-bottom: 2.25rem;
+  margin-bottom: 3.5rem;
   font-family: "Rubik Dirt", cursive, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 400;
 }
 
@@ -103,5 +118,5 @@
 .sourAleInfo li {
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
-  border-bottom: 1px dashed #333333;
+  border-bottom: 1px solid #333333;
 }
