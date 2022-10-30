@@ -45,33 +45,34 @@ const Christmas = () => {
                 <h2>Information om ölen</h2>
                 <ul className={classes.christmasUlText}>
                   <li>
-                    <span>Färg:</span>Nyponröd kopparton med krämigt vitt skum.
+                    <span>Stil:</span>Experimentell jul porter.
                   </li>
                   <li>
-                    <span>Doft::</span>Tomte skum, smörkola och karamell.
+                    <span>Färg:</span>Svart, stabil skumkrona.
                   </li>
                   <li>
-                    <span>Smak:</span>Tomte skum med ton av karamellmalt.
+                    <span>Doft:</span>Svag doft av jordgubbar, choklad och
+                    kaffe.
                   </li>
                   <li>
-                    <span>Malt:</span>Pale Ale, Maris Otter, Carared & Roasted
-                    Barley.
+                    <span>Smak:</span>Komplex smak av kaffe, vanilj, choklad
+                    samt en tydlig karaktär av skumtomtar.
                   </li>
                   <li>
-                    <span>Humle:</span>East Kent Golding i kok. EBU 35
+                    <span>Malt:</span>Pale ale, black malt, vete, carafa special
+                    III och Crystal malt.
                   </li>
                   <li>
-                    <span>Jäsning & lagring:</span>Överjäst röd ale, jästid 8
-                    dagar, kyl stabiliserad 30 dagar i tank på +-0 gr.
+                    <span>Humle:</span>Warrior.
                   </li>
                   <li>
-                    <span>Stamvörtstyrka:</span>13.8% Plato
+                    <span>Jäst:</span>Voss Kveik.
                   </li>
                   <li>
-                    <span>Alkohol %:</span>Alkohol %: 5.2
+                    <span>Alkohol:</span>7.2 %
                   </li>
                   <li>
-                    <span>Restextrakt:</span>4.0%
+                    <span>Övrigt:</span>Skumtomtar.
                   </li>
                 </ul>
               </div>

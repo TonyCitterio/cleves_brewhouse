@@ -52,7 +52,7 @@
 
 .lagerIntro > *:nth-child(1) {
   flex: 1 1 35%;
-  min-width: 25ch;
+  min-width: 28ch;
   display: flex;
   justify-content: flex-end;
 }
@@ -85,15 +85,15 @@
 }
 
 .lagerInfo > *:nth-child(1) {
-  min-height: 750px;
+  min-height: 700px;
   padding: 10rem;
-  flex: 1 1 40%;
-  min-width: 30ch;
+  flex: 1 1 45%;
+  min-width: 20ch;
 }
 
 .lagerInfo > *:nth-child(2) {
   padding: 3rem;
-  flex: 1 1 60%;
+  flex: 1 1 55%;
   background-color: #d2d7df;
 }
 
@@ -119,4 +119,36 @@
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #333333;
+}
+
+@media (max-width: 810px) {
+  .lagerLink {
+    width: 85%;
+  }
+
+  .lagerContent {
+    width: 85%;
+  }
+
+  .lagerIntro > *:nth-child(1) {
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+
+  .lagerIntro h1 {
+    font-size: 1.5rem;
+  }
+
+  .lagerInfo > *:nth-child(1) {
+    padding: 9rem;
+  }
+
+  .lagerInfo h2 {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .lagerText .sourAleUlText {
+    font-size: 1em;
+  }
 }

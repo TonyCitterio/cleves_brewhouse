@@ -5,9 +5,9 @@
   justify-content: space-between;
 }
 
-.navbarImg {
-  margin-left: 1.25rem;
-  display: flex;
+.navbarLogo {
+  height: 163px;
+  width: 163px;
 }
 
 .dropdownIcon {
@@ -90,8 +90,29 @@
   color: green;
 }
 
-@media (max-width: 599px) {
+@media (min-width: 750px) {
+  .dropdown {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
   .link {
     display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .navbarLogo {
+    height: 137px;
+    width: 137px;
+  }
+
+  .link {
+    max-width: 70%;
+  }
+
+  .linkStyle {
+    font-size: 1.25rem;
   }
 }

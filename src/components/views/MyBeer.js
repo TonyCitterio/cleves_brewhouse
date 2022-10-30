@@ -14,8 +14,7 @@ const MyBeer = () => {
           <img
             src={lager}
             alt="Den Clevesköldska Lagern"
-            height={360}
-            width={450}
+            className={classes.myBeerImg}
           ></img>
         </div>
         <div>

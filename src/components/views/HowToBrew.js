@@ -1,12 +1,16 @@
 import classes from "./HowToBrew.module.css";
-import ingredients from "../pictures/ingredients.jpeg"
+import ingredients from "../pictures/ingredients.jpeg";
 
 const HowToBrew = () => {
   return (
     <>
       <div className={classes.introHowToBrew}>
         <div>
-          <img src={ingredients} alt="beer barrel" height={360} width={450}></img>
+          <img
+            src={ingredients}
+            alt="beer ingredients"
+            className={classes.ingredientsImg}
+          ></img>
         </div>
         <div>
           <h1>Från idé till glas</h1>
@@ -19,7 +23,9 @@ const HowToBrew = () => {
         </div>
       </div>
       <div className={classes.ingredients}>
-        <h2>Grunderna är de samma!</h2>
+        <div>
+          <h2>Grunderna är de samma!</h2>
+        </div>
         <div>
           <h3>Humle</h3>
           <p className={classes.howToBrewText}>

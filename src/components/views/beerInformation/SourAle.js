@@ -46,33 +46,33 @@ const SourAle = () => {
                 <h2>Information om ölen</h2>
                 <ul className={classes.sourAleUlText}>
                   <li>
-                    <span>Färg:</span>Halmgul med vitt fast skum.
+                    <span>Stil:</span>Experimentell suröl.
                   </li>
                   <li>
-                    <span>Doft:</span>Ton av örter och citrus.
+                    <span>Färg:</span>Klar, svart.
                   </li>
                   <li>
-                    <span>Smak:</span> Frisk och stram smak med inslag av citrus
-                    och markerad beska.
+                    <span>Doft:</span>Doft av sura Ferrari bilar med colasmak.
                   </li>
                   <li>
-                    <span>Malt:</span>Wiener malt 100%.
+                    <span>Smak:</span>Smak av julmust med en angenäm nivå av
+                    surhet.
                   </li>
                   <li>
-                    <span>Humle:</span>Magnum & Saaz, torrhumlad med Kazbek.
+                    <span>Malt:</span>Pilsner, vete, acidulated, carapils och
+                    havre.
                   </li>
                   <li>
-                    <span>Jäsning & lagringrg:</span>Underjäst pils, jästid 8
-                    dagar, kyl stabiliserad i 25 dagar.
+                    <span>Humle:</span>Centennial.
                   </li>
                   <li>
-                    <span>Stamvörtstyrka:</span>14,59
+                    <span>Jäst:</span>Philly sour.
                   </li>
                   <li>
-                    <span>Alkohol %:</span>5.8
+                    <span>Alkohol:</span>7.5 %
                   </li>
                   <li>
-                    <span>Restextrakt:</span>3.7%
+                    <span>Övrigt:</span>Julmustkoncentrat.
                   </li>
                 </ul>
               </div>

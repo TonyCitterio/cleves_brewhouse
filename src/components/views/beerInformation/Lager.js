@@ -46,34 +46,33 @@ const Lager = () => {
                 <h2>Information om ölen</h2>
                 <ul className={classes.lagerUlText}>
                   <li>
-                    <span>Färg:</span>Bärnsten med ett vitt stabilt skum.
+                    <span>Stil:</span>Amerikansk lager.
                   </li>
                   <li>
-                    <span>Doft:</span>Frisk med inslag av citrus och torkad
-                    frukt.
+                    <span>Färg:</span>Klar, gul.
                   </li>
                   <li>
-                    <span>Smak:</span>Aromatisk med balanserad maltighet och
-                    beska. Inslag av apelsinskal, rågbröd och örter.
+                    <span>Doft:</span>Maltig doft med en lätt kryddig arom.
                   </li>
                   <li>
-                    <span>Malt:</span>Pale Ale & Caramünch.
+                    <span>Smak:</span>Maltig smak med inslag av örter och
+                    knäckebröd.
                   </li>
                   <li>
-                    <span>Humle:</span>Bärnsten med ett vitt stabilt skum.
+                    <span>Malt:</span>Pilsner malt, carapils, vienna, melanoidin
+                    och acidulated malt.
                   </li>
                   <li>
-                    <span>Jäsning & lagring:</span>Underjäst mellanmörk lager,
-                    jästid 11 dagar, kylstabiliserad 25 dagar i tank.
+                    <span>Humle:</span>Tradition.
                   </li>
                   <li>
-                    <span>Stamvörtstyrka:</span>13.5 - 14 % Plato
+                    <span>Jäst:</span>California Lager Yeast.
                   </li>
                   <li>
-                    <span>Alkohol %:</span> 5.25 - 6.0
+                    <span>Alkohol:</span>4.1 %
                   </li>
                   <li>
-                    <span>Restextrakt:</span> 3.5 - 3.9 %
+                    <span>Övrigt:</span>Filtrerad.
                   </li>
                 </ul>
               </div>

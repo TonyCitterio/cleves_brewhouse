@@ -45,36 +45,33 @@ const Porter = () => {
                 <h2>Information om ölen</h2>
                 <ul className={classes.porterUlText}>
                   <li>
-                    <span>Färg:</span>Mycket klar, mellanmörk med gyllene rött
-                    inslag.
+                    <span>Stil:</span>New England American East cost hazy ale.
                   </li>
                   <li>
-                    <span>Doft:</span> Tydlig ton av sött mörkt bröd med inslag
-                    av apelsin/mandarin.
+                    <span>Färg:</span>Oklar, gul färg.
                   </li>
                   <li>
-                    <span>Smak:</span>Tydlig fyllig maltkropp med klar sötma,
-                    låg beska och smak av pomeransskal.
+                    <span>Doft:</span>Humlearomatisk med en söt ton av
+                    jordgubbar, melon och en liten hint av ananas.
                   </li>
                   <li>
-                    <span>Malt:</span>Pale Ale, Vete, Havre, Melanoidin.
-                    (Laktos)
+                    <span>Smak:</span>Humlearomatisk, fruktig söt smak med
+                    inslag av sockerkaka, ananas och jordgubb.
                   </li>
                   <li>
-                    <span>Humle:</span> Belma, Mosaik, Citra.
+                    <span>Malt:</span>Pale ale, vete, havre och melanoidin malt.
                   </li>
                   <li>
-                    <span>Jäsning & lagring:</span>Underjäst lager i 12 dagar på
-                    12gr. Kyld i 38 dagar.
+                    <span>Humle:</span>Citra, Belma, Mosaik.
                   </li>
                   <li>
-                    <span>Stamvörtstyrka:</span>(Sockerhalt före jäsning) 14,6%
+                    <span>Jäst:</span>Verdant IPA.
                   </li>
                   <li>
-                    <span>Alkohol %:</span>5,7
+                    <span>Alkohol:</span>5.7 %
                   </li>
                   <li>
-                    <span>Tappad:</span>4,3%
+                    <span>Övrigt:</span>Laktos.
                   </li>
                 </ul>
               </div>

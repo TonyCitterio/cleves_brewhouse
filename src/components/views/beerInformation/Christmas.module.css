@@ -85,15 +85,15 @@
 }
 
 .christmasInfo > *:nth-child(1) {
-  min-height: 750px;
+  min-height: 790px;
   padding: 10rem;
-  flex: 1 1 40%;
-  min-width: 30ch;
+  flex: 1 1 45%;
+  min-width: 20ch;
 }
 
 .christmasInfo > *:nth-child(2) {
   padding: 3rem;
-  flex: 1 1 60%;
+  flex: 1 1 55%;
   background-color: #d2d7df;
 }
 
@@ -119,4 +119,36 @@
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #333333;
+}
+
+@media (max-width: 810px) {
+  .christmasLink {
+    width: 85%;
+  }
+
+  .christmasContent {
+    width: 85%;
+  }
+
+  .christmasIntro > *:nth-child(1) {
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+
+  .christmasIntro h1 {
+    font-size: 1.5rem;
+  }
+
+  .christmasInfo > *:nth-child(1) {
+    padding: 9rem;
+  }
+
+  .christmasInfo h2 {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .christmasText .sourAleUlText {
+    font-size: 1em;
+  }
 }
