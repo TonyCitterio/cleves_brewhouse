@@ -52,7 +52,7 @@
 
 .lagerIntro > *:nth-child(1) {
   flex: 1 1 35%;
-  min-width: 28ch;
+  min-width: 25ch;
   display: flex;
   justify-content: flex-end;
 }
@@ -64,7 +64,7 @@
 }
 
 .lagerIntro img {
-  margin: 2rem 3.25rem;
+  margin: 2rem 2rem;
 }
 
 .lagerIntro h1 {
@@ -121,7 +121,7 @@
   border-bottom: 1px solid #333333;
 }
 
-@media (max-width: 810px) {
+@media (max-width: 820px) {
   .lagerLink {
     width: 85%;
   }
@@ -150,5 +150,9 @@
 
   .lagerText .sourAleUlText {
     font-size: 1em;
+  }
+
+  .lagerText, .lagerIntro h1, .lagerInfo h2 {
+    text-align: center;
   }
 }
