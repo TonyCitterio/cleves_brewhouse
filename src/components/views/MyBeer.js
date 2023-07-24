@@ -18,32 +18,34 @@ const MyBeer = () => {
           ></img>
         </div>
         <div>
-          <h1>Bryggeriets öl</h1>
-          <p className={classes.myBeerText}>
-            Jag brygde min första öl 2012. Sedan dess har jag bryggt ett antal
-            olika sorters öl. <br></br> Jag tycker om att exprimentera mig fram
-            och är inte rädd för att prova nya saker för att få fram goda
-            smarker på ölet.
-          </p>
+          <div className={classes.introMyBeerTextDiv}>
+            <h1>Bryggeriets öl</h1>
+            <p className={classes.myBeerText}>
+              Jag brygde min första öl 2012. Sedan dess har jag bryggt ett antal
+              olika sorters öl. <br></br> Jag tycker om att exprimentera mig
+              fram och är inte rädd för att prova nya saker för att få fram goda
+              smarker på ölet.
+            </p>
+          </div>
         </div>
       </div>
       <div className={classes.contentMyBeer}>
-        <h2>Här hittar du Cleves BrewHouse öl</h2>
+        <h2>Utforska vårt sortiment av öl med personlighet!</h2>
         <p>Delas bara i slutna sällskap!</p>
         <span className={classes.myBeerYet}>Än</span>
       </div>
       <div className={classes.myBeerLink}>
         <Link className={classes.myBeerLinkStyleOne} to="/porter">
-          <img src={beerFour} alt="beer label" height={180} width={180}></img>
+          <img src={beerFour} alt="beer label" height={140} width={195}></img>
         </Link>
         <Link className={classes.myBeerLinkStyleTwo} to="/sourAle">
-          <img src={beerTwo} alt="beer label" height={180} width={180}></img>
+          <img src={beerTwo} alt="beer label" height={140} width={195}></img>
         </Link>
         <Link className={classes.myBeerLinkStyleThree} to="/christmas">
-          <img src={beerOne} alt="beer label" height={180} width={180}></img>
+          <img src={beerOne} alt="beer label" height={140} width={195}></img>
         </Link>
         <Link className={classes.myBeerLinkStyleFour} to="/lager">
-          <img src={beerThree} alt="beer label" height={180} width={180}></img>
+          <img src={beerThree} alt="beer label" height={140} width={195}></img>
         </Link>
       </div>
     </>

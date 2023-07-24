@@ -41,9 +41,7 @@ const Navbar = () => {
             </Link>
             <Link className={classes.dropdownLink} to="myBeer">
               Bryggeriets öl
-            </Link>
-            <div>
-            </div>
+            </Link>     
           </div>
         </div>
         <a href="mailto:tcitterio@hotmail.com">

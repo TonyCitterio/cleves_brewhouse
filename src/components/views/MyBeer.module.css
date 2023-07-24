@@ -1,63 +1,89 @@
-.introMyBeer h1 {
-  margin-bottom: 0.2rem;
-  font-family: "Rubik Dirt", cursive, sans-serif;
-  font-size: 2.6rem;
-  font-weight: 400;
-}
-
-.contentMyBeer h2 {
-  font-family: "Rubik Dirt", cursive, sans-serif;
-  font-size: 1.85rem;
-  font-weight: 400;
-}
-
-.myBeerText {
-  line-height: 2em;
-}
-
-.contentMyBeer p {
-  margin-top: 3rem;
-  margin-bottom: 0;
-  z-index: 1;
-  font-size: 1.5rem;
-}
-
-.myBeerImg {
-  height: 360px;
-  width: 450px;
-}
-
 .introMyBeer {
-  padding: 2rem 0;
+  /*   mask created with 
+  https://css-generators.com/wavy-shapes/ */
+  padding: 3.25rem 0;
+  margin-top: 2.25rem;
   display: flex;
   flex-wrap: wrap;
   background-color: #d2d7df;
   color: #333333;
+  /*   --mask: radial-gradient(
+        13.12px at 50% calc(100% - 18.5px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 20px) 0/40px 100%,
+    radial-gradient(13.12px at 50% calc(100% + 8.5px), #0000 99%, #000 101%) 50%
+      calc(100% - 10px) / 40px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask); */
+  --mask: radial-gradient(50.4px at 50% 70.5px, #000 99%, #0000 101%)
+      calc(50% - 60px) 0/120px 51% repeat-x,
+    radial-gradient(50.4px at 50% -40.5px, #0000 99%, #000 101%) 50% 30px/120px
+      calc(51% - 30px) repeat-x,
+    radial-gradient(50.4px at 50% calc(100% - 70.5px), #000 99%, #0000 101%)
+      calc(50% - 60px) 100%/120px 51% repeat-x,
+    radial-gradient(50.4px at 50% calc(100% + 40.5px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px calc(51% - 30px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
 
 .introMyBeer > *:nth-child(1) {
-  padding: 3rem;
-  flex: 1 1 45%;
-  min-width: 30ch;
+  padding: 5rem 0;
+  flex: 1 1 40%;
+  /* min-width: 30ch; */
   display: flex;
   justify-content: flex-end;
 }
 
 .introMyBeer > *:nth-child(2) {
-  padding: 3rem;
-  flex: 1 1 55%;
+  padding: 0 0.75rem;
+  flex: 1 1 60%;
   min-width: 35ch;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.introMyBeer img {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+.introMyBeerTextDiv {
+  width: 85%;
+  margin-left: 1.25rem;
+}
+
+.myBeerImg {
+  width: 390px;
+  height: 300px;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.introMyBeer h1 {
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.myBeerText {
+  line-height: 1.75em;
+}
+
+.contentMyBeer h2 {
+  font-family: "Rubik Dirt", cursive, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.contentMyBeer p {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  z-index: 1;
+  font-size: 1.1rem;
 }
 
 .contentMyBeer {
-  margin-top: 4rem;
+  margin-top: 3.5rem;
   padding: 1.25rem;
   color: #333333;
   display: flex;
@@ -68,23 +94,23 @@
 
 .myBeerYet {
   position: relative;
-  top: -70px;
+  top: -60px;
   z-index: -1;
   font-family: "Rubik Dirt", cursive, sans-serif;
-  font-size: 5.35rem;
+  font-size: 4.5rem;
   font-weight: 400;
   transform: rotate(330deg);
   color: #f780007c;
 }
 
 .myBeerLink {
-  margin-bottom: 8.75rem;
+  margin: 0.5rem 1.25rem 8.75rem 1.25rem;
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.25rem;
+  gap: 2rem;
 }
 
 .myBeerLinkStyleOne img,
@@ -111,44 +137,65 @@
 }
 
 @media (max-width: 1159px) {
-  .introMyBeer h1 {
-    font-size: 2.1rem;
-  }
-
   .myBeerImg {
-    height: 280px;
-    width: 340px;
+    width: 328px;
+    height: 238px;
   }
-
-  .introMyBeer > *:nth-child(1) {
-    flex: 1 1 50%;
+  .introMyBeer h1 {
+    font-size: 1.9rem;
   }
-
-  .introMyBeer > *:nth-child(2) {
-    padding: 1.75rem;
-    flex: 1 1 50%;
-  }
-
-  .myBeerText {
-    font-size: 1em;
+  .contentMyBeer h2 {
+    font-size: 1.45rem;
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 900px) {
+  .introMyBeer > *:nth-child(1) {
+    flex: 1 1 50%;
+    padding: 2.6rem 1.35rem;
+  }
+  .introMyBeer > *:nth-child(2) {
+    padding: 2.5rem 0;
+    flex: 1 1 50%;
+  }
+  .introMyBeerTextDiv {
+    margin-left: 0.5rem;
+  }
+  .myBeerText {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 819px) {
+  .myBeerImg {
+    width: 310px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 741px) {
   .introMyBeer > *:nth-child(1) {
     justify-content: center;
-    align-items: center;
+    padding: 0;
+    margin: 2.7rem 0;
   }
-}
-
-@media (max-width: 400px) {
+  .introMyBeer > *:nth-child(2) {
+    align-items: center;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
   .myBeerText,
   .introMyBeer h1,
   .contentMyBeer h2 {
     text-align: center;
   }
-
   .myBeerLink {
     padding: 0 0.5rem;
+  }
+  .introMyBeerTextDiv {
+    margin-left: 0;
+  }
+  .myBeerImg {
+    margin-right: 0;
   }
 }
