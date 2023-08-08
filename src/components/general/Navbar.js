@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className={classes.contact}>
         <div className={classes.dropdown}>
           <button className={classes.dropdownIcon}>
-            <IoIosArrowDropdownCircle size={37} />
+            <IoIosArrowDropdownCircle size={38} />
           </button>
           <div className={classes.dropdownMenu}>
             <Link className={classes.dropdownLink} to="/">
@@ -45,7 +45,7 @@ const Navbar = () => {
           </div>
         </div>
         <a href="mailto:tcitterio@hotmail.com">
-          <ImMail3 size={29} className={classes.icon} />
+          <ImMail3 size={25} className={classes.icon} />
         </a>
       </div>
     </section>

@@ -5,17 +5,9 @@
   align-items: center;
 }
 
-.porterText {
-  line-height: 2em;
-}
-
-.porterUlText {
-  line-height: 1.5em;
-}
-
 .porterLink {
-  width: 80%;
-  margin: 2rem 0;
+  width: clamp(33ch, 90%, 96ch);
+  margin: 2.75rem 0 1.2rem 0;
 }
 
 .porterLinkStyle {
@@ -24,19 +16,22 @@
   font-weight: 400;
   text-decoration: none;
   color: green;
-  text-shadow: 3px 3px rgba(0, 128, 0, 0.076);
+  text-shadow: -6px 4px rgba(0, 128, 0, 0.222);
   transition: 0.12s 0.12s;
 }
 
 .porterLinkStyle:hover {
   color: orange;
-  text-shadow: 3px 3px rgba(255, 166, 0, 0.322);
+  text-shadow: -6px 4px rgba(255, 166, 0, 0.322);
 }
 
-.porterContent {
-  margin-bottom: 5rem;
-  padding: 2rem;
-  width: 80%;
+.porterContainer {
+  margin-bottom: 4rem;
+  padding: 2.5rem 1.25rem;
+  width: clamp(33ch, 90%, 96ch);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #333333;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -44,115 +39,164 @@
 }
 
 .porterIntro {
-  margin-top: 2rem;
-  margin-bottom: 3.5rem;
   display: flex;
   flex-wrap: wrap;
-}
-
-.porterIntro > *:nth-child(1) {
-  flex: 1 1 35%;
-  min-width: 25ch;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.porterIntro > *:nth-child(2) {
-  flex: 1 1 65%;
-  display: flex;
   align-items: center;
+  margin-bottom: 2.3rem;
 }
 
 .porterIntro img {
-  margin: 2rem 2rem;
+  width: 185px;
+  height: 145px;
+  margin-right: 1.15rem;
+  box-shadow: #5c5552 0px 7px 15px;
 }
 
-.porterIntro h1 {
+.porterIntroText {
+  width: 70%;
+}
+
+.porterIntroText h1 {
   font-family: "Rubik Dirt", cursive, sans-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
-.porterInfoContainer {
-  display: flex;
-  justify-content: center;
+.porterIntroText p {
+  line-height: 1.7em;
+  margin-top: 0.5rem;
 }
 
 .porterInfo {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
-.porterInfo > *:nth-child(1) {
-  min-height: 700px;
-  padding: 10rem;
+.porterInfoImg {
+  min-height: 750px;
   flex: 1 1 45%;
-  min-width: 20ch;
+  min-width: 25ch;
 }
 
-.porterInfo > *:nth-child(2) {
-  padding: 3rem;
+.porterInfoUl {
   flex: 1 1 55%;
   background-color: #d2d7df;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.porterInfo h2 {
-  margin-bottom: 3.5rem;
+.porterInfoUl h2 {
+  margin-bottom: 2.75rem;
+  margin-left: 0.7rem;
   font-family: "Rubik Dirt", cursive, sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   font-weight: 400;
 }
 
-.porterInfo ul {
+.porterInfoUl ul {
   padding: 0;
+  margin: 0;
+  width: 95%;
   list-style: none;
 }
 
-.porterInfo li span {
-  margin-right: 0.5rem;
-  font-weight: bold;
+.porterInfoUl li {
+  margin-bottom: 1.7rem;
+  margin-left: 0.7rem;
+  line-height: 1.5em;
+}
+
+.porterInfoUl li span {
+  margin-right: 0.4rem;
   color: green;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
-.porterInfo li {
-  padding-bottom: 0.75rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #333333;
-}
-
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
   .porterLink {
-    width: 85%;
+    margin-top: 2.2rem;
   }
-
-  .porterContent {
-    width: 85%;
+  .porterIntroText h1 {
+    font-size: 1.55rem;
   }
-
-  .porterIntro > *:nth-child(1) {
-    margin-bottom: 3rem;
-    justify-content: center;
+  .porterInfoUl h2 {
+    font-size: 1.35rem;
   }
+  .porterLinkStyle {
+    font-size: 1.6rem;
+  }
+  .porterIntro img {
+    width: 170px;
+    height: 135px;
+  }
+}
 
-  .porterIntro h1 {
+@media (max-width: 923px) {
+  .porterContainer {
+    padding-top: 1.25rem;
+  }
+  .porterIntro {
+    margin-bottom: 1.5rem;
+  }
+  .porterIntro img {
+    width: 150px;
+    height: 120px;
+  }
+  .porterContainer p {
+    font-size: 0.95em;
+  }
+  .porterInfoUl li {
+    margin-bottom: 1.25rem;
+    font-size: 0.95em;
+  }
+  .porterInfoImg {
+    min-height: 650px;
+  }
+  .porterIntroText h1 {
     font-size: 1.5rem;
   }
-
-  .porterInfo > *:nth-child(1) {
-    padding: 9rem;
+  .porterInfoUl h2 {
+    font-size: 1.3rem;
   }
+}
 
-  .porterInfo h2 {
-    margin-bottom: 2rem;
-    font-size: 1.4rem;
-  }
-
-  .porterText .sourAleUlText {
-    font-size: 1em;
-  }
-
-  .porterText, .porterIntro h1, .porterInfo h2 {
+@media (max-width: 714px) {
+  .porterIntro {
+    justify-content: center;
     text-align: center;
+  }
+  .porterIntro img {
+    margin: 2.5rem 0 1.7rem 0;
+  }
+  .porterIntroText {
+    width: 80%;
+  }
+  .porterIntroText p {
+    margin-top: 0.75rem;
+  }
+  .porterInfo {
+    width: clamp(27ch, 70%, 34ch);
+    text-align: center;
+  }
+  .porterInfoImg {
+    min-height: 500px;
+    min-width: 20ch;
+  }
+  .porterInfoUl {
+    align-items: center;
+  }
+  .porterInfoUl h2 {
+    margin: 2.5rem 0;
+  }
+  .porterInfoUl li {
+    margin-left: 0;
+  }
+  .porterInfoUl ul li:last-child {
+    margin-bottom: 2.5rem;
   }
 }

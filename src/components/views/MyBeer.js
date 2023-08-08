@@ -36,16 +36,16 @@ const MyBeer = () => {
       </div>
       <div className={classes.myBeerLink}>
         <Link className={classes.myBeerLinkStyleOne} to="/porter">
-          <img src={beerFour} alt="beer label" height={140} width={195}></img>
+          <img src={beerFour} alt="beer label"></img>
         </Link>
         <Link className={classes.myBeerLinkStyleTwo} to="/sourAle">
-          <img src={beerTwo} alt="beer label" height={140} width={195}></img>
+          <img src={beerTwo} alt="beer label"></img>
         </Link>
         <Link className={classes.myBeerLinkStyleThree} to="/christmas">
-          <img src={beerOne} alt="beer label" height={140} width={195}></img>
+          <img src={beerOne} alt="beer label"></img>
         </Link>
         <Link className={classes.myBeerLinkStyleFour} to="/lager">
-          <img src={beerThree} alt="beer label" height={140} width={195}></img>
+          <img src={beerThree} alt="beer label"></img>
         </Link>
       </div>
     </>
