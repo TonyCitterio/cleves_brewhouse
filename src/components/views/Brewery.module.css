@@ -3,7 +3,7 @@
 }
 
 .breweryContent h1 {
-  margin: 3.5rem;
+  margin: 4rem 0 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,12 +14,13 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
-  padding: 2rem 0rem;
-  width: 80%;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  padding: 1rem 0rem;
+  /* width: 80%; */
+  width: clamp(30ch, 80%, 90ch);
   margin: auto;
-  row-gap: 3rem;
-  column-gap: 4rem;
+  row-gap: 2.5rem;
+  column-gap: 2.5rem;
 }
 
 .gallery img {
@@ -33,9 +34,5 @@
 @media (max-width: 430px) {
   .breweryContent h1 {
     font-size: 2.25rem;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   }
 }

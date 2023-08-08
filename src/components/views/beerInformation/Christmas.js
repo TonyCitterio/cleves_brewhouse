@@ -14,9 +14,7 @@ const Christmas = () => {
         </div>
         <div className={classes.christmasContainer}>
           <div className={classes.christmasIntro}>
-            <div>
-              <img src={beerLabel} alt="beer label"></img>
-            </div>
+            <img src={beerLabel} alt="beer label"></img>
             <div className={classes.christmasIntroText}>
               <h1>Cleves Tomte-ish Porter</h1>
               <p>

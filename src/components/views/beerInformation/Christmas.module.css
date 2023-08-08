@@ -1,5 +1,4 @@
 .christmasMain {
-  padding: 3.5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,8 +6,8 @@
 }
 
 .christmasLink {
-  width: clamp(33ch, 80%, 140ch);
-  margin-bottom: 1rem;
+  width: clamp(33ch, 90%, 96ch);
+  margin: 2.75rem 0 1.2rem 0;
 }
 
 .christmasLinkStyle {
@@ -17,18 +16,19 @@
   font-weight: 400;
   text-decoration: none;
   color: green;
-  text-shadow: 6px 6px rgba(0, 128, 0, 0.076);
+  text-shadow: -6px 4px rgba(0, 128, 0, 0.222);
   transition: 0.12s 0.12s;
 }
 
 .christmasLinkStyle:hover {
   color: orange;
-  text-shadow: 6px 6px rgba(255, 166, 0, 0.322);
+  text-shadow: -6px 4px rgba(255, 166, 0, 0.322);
 }
 
 .christmasContainer {
-  padding: 2rem 1rem 3rem 1rem;
-  width: clamp(33ch, 80%, 140ch);
+  margin-bottom: 4rem;
+  padding: 2.5rem 1.25rem;
+  width: clamp(33ch, 90%, 96ch);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,54 +39,50 @@
 }
 
 .christmasIntro {
-  padding: 3rem 0;
-  /* width: clamp(30ch, 85%, 120ch); */
-  width: 90%;
   display: flex;
   flex-wrap: wrap;
-}
-
-.christmasIntro > *:nth-child(1) {
-  display: flex;
-  flex: 1 1 3%;
-  /* margin-right: 0.5rem; */
-  min-width: 20ch;
-}
-
-.christmasIntro > *:nth-child(2) {
-  flex: 1 1 70%;
+  align-items: center;
+  margin-bottom: 2.3rem;
 }
 
 .christmasIntro img {
-  width: 160px;
-  height: 160px;
+  width: 185px;
+  height: 145px;
+  margin-right: 1.15rem;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  box-shadow: #ba181b 0px 7px 15px;
+}
+
+.christmasIntroText {
+  width: 70%;
 }
 
 .christmasIntroText h1 {
   font-family: "Rubik Dirt", cursive, sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .christmasIntroText p {
-  line-height: 1.75em;
+  line-height: 1.7em;
+  margin-top: 0.5rem;
 }
 
 .christmasInfo {
-  /* width: clamp(30ch, 85%, 120ch); */
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
+
 .christmasInfoImg {
   min-height: 750px;
   flex: 1 1 45%;
-  min-width: 30ch;
+  min-width: 25ch;
 }
 
 .christmasInfoUl {
-  padding: 3rem;
   flex: 1 1 55%;
   background-color: #d2d7df;
   display: flex;
@@ -95,7 +91,8 @@
 }
 
 .christmasInfoUl h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 2.75rem;
+  margin-left: 0.7rem;
   font-family: "Rubik Dirt", cursive, sans-serif;
   font-size: 1.55rem;
   font-weight: 400;
@@ -103,38 +100,27 @@
 
 .christmasInfoUl ul {
   padding: 0;
+  margin: 0;
+  width: 98%;
   list-style: none;
 }
 
 .christmasInfoUl li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
+  margin-left: 0.7rem;
   line-height: 1.5em;
-  /* border-bottom: 1px solid #333333; */
 }
 
 .christmasInfoUl li span {
   margin-right: 0.4rem;
   color: green;
   font-weight: bold;
-}
-
-@media (max-width: 907px) {
-  .christmasIntro > *:nth-child(1) {
-    justify-content: center;
-  }
-  .christmasIntroText,
-  .christmasInfoUl h2,
-  .christmasInfoUl li {
-    text-align: center;
-  }
-  .christmasIntro img {
-margin-bottom: 1rem;
-  }
+  font-size: 1.1em;
 }
 
 @media (max-width: 1024px) {
-  .christmasContainer p, li {
-    font-size: 0.95em;
+  .christmasLink {
+    margin-top: 2.2rem;
   }
   .christmasIntroText h1 {
     font-size: 1.55rem;
@@ -144,5 +130,74 @@ margin-bottom: 1rem;
   }
   .christmasLinkStyle {
     font-size: 1.6rem;
+  }
+  .christmasIntro img {
+    width: 170px;
+    height: 135px;
+  }
+}
+
+@media (max-width: 923px) {
+  .christmasContainer {
+    padding-top: 1.25rem;
+  }
+  .christmasIntro {
+    margin-bottom: 1.5rem;
+  }
+  .christmasIntro img {
+    width: 150px;
+    height: 120px;
+  }
+  .christmasContainer p {
+    font-size: 0.95em;
+  }
+  .christmasInfoUl li {
+    margin-bottom: 1.25rem;
+    font-size: 0.95em;
+  }
+  .christmasInfoImg {
+    min-height: 650px;
+  }
+  .christmasIntroText h1 {
+    font-size: 1.5rem;
+  }
+  .christmasInfoUl h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 714px) {
+  .christmasIntro {
+    justify-content: center;
+    text-align: center;
+  }
+  .christmasIntro img {
+    margin: 2.5rem 0 1.7rem 0;
+  }
+  .christmasIntroText {
+    width: 80%;
+  }
+  .christmasIntroText p {
+    margin-top: 0.75rem;
+  }
+  .christmasInfo {
+    width: clamp(27ch, 70%, 34ch);
+    text-align: center;
+  }
+  .christmasInfoImg {
+    min-height: 500px;
+    min-width: 20ch;
+  }
+  .christmasInfoUl {
+    align-items: center;
+  }
+  .christmasInfoUl h2 {
+    margin: 2.5rem 0;
+  }
+  .christmasInfoUl li {
+    margin-left: 0;
+  }
+  .christmasInfoUl ul li:last-child {
+    margin-bottom: 2.5rem;
   }
 }

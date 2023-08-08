@@ -5,17 +5,9 @@
   align-items: center;
 }
 
-.sourAleText {
-  line-height: 2em;
-}
-
-.sourAleUlText {
-  line-height: 1.5em;
-}
-
 .sourAleLink {
-  width: 80%;
-  margin: 2rem 0;
+  width: clamp(33ch, 90%, 96ch);
+  margin: 2.75rem 0 1.2rem 0;
 }
 
 .sourAleLinkStyle {
@@ -24,19 +16,22 @@
   font-weight: 400;
   text-decoration: none;
   color: green;
-  text-shadow: 3px 3px rgba(0, 128, 0, 0.076);
+  text-shadow: -6px 4px rgba(0, 128, 0, 0.222);
   transition: 0.12s 0.12s;
 }
 
 .sourAleLinkStyle:hover {
   color: orange;
-  text-shadow: 3px 3px rgba(255, 166, 0, 0.322);
+  text-shadow: -6px 4px rgba(255, 166, 0, 0.322);
 }
 
-.sourAleContent {
-  margin-bottom: 5rem;
-  padding: 2rem;
-  width: 80%;
+.sourAleContainer {
+  margin-bottom: 4rem;
+  padding: 2.5rem 1.25rem;
+  width: clamp(33ch, 90%, 96ch);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #333333;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -44,115 +39,164 @@
 }
 
 .sourAleIntro {
-  margin-top: 2rem;
-  margin-bottom: 3.5rem;
   display: flex;
   flex-wrap: wrap;
-}
-
-.sourAleIntro > *:nth-child(1) {
-  flex: 1 1 35%;
-  min-width: 25ch;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.sourAleIntro > *:nth-child(2) {
-  flex: 1 1 65%;
-  display: flex;
   align-items: center;
+  margin-bottom: 2.3rem;
 }
 
 .sourAleIntro img {
-  margin: 2rem 2rem;
+  width: 185px;
+  height: 145px;
+  margin-right: 1.15rem;
+  box-shadow: #f77f00 0px 7px 15px;
 }
 
-.sourAleIntro h1 {
+.sourAleIntroText {
+  width: 70%;
+}
+
+.sourAleIntroText h1 {
   font-family: "Rubik Dirt", cursive, sans-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
-.sourAleInfoContainer {
-  display: flex;
-  justify-content: center;
+.sourAleIntroText p {
+  line-height: 1.7em;
+  margin-top: 0.5rem;
 }
 
 .sourAleInfo {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
-.sourAleInfo > *:nth-child(1) {
-  min-height: 790px;
-  padding: 10rem;
+.sourAleInfoImg {
+  min-height: 750px;
   flex: 1 1 45%;
-  min-width: 20ch;
+  min-width: 25ch;
 }
 
-.sourAleInfo > *:nth-child(2) {
-  padding: 3rem;
+.sourAleInfoUl {
   flex: 1 1 55%;
   background-color: #d2d7df;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.sourAleInfo h2 {
-  margin-bottom: 3.5rem;
+.sourAleInfoUl h2 {
+  margin-bottom: 2.75rem;
+  margin-left: 0.7rem;
   font-family: "Rubik Dirt", cursive, sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   font-weight: 400;
 }
 
-.sourAleInfo ul {
+.sourAleInfoUl ul {
   padding: 0;
+  margin: 0;
+  width: 98%;
   list-style: none;
 }
 
-.sourAleInfo li span {
-  margin-right: 0.5rem;
-  font-weight: bold;
+.sourAleInfoUl li {
+  margin-bottom: 1.7rem;
+  margin-left: 0.7rem;
+  line-height: 1.5em;
+}
+
+.sourAleInfoUl li span {
+  margin-right: 0.4rem;
   color: green;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
-.sourAleInfo li {
-  padding-bottom: 0.75rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #333333;
-}
-
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
   .sourAleLink {
-    width: 85%;
+    margin-top: 2.2rem;
   }
-
-  .sourAleContent {
-    width: 85%;
+  .sourAleIntroText h1 {
+    font-size: 1.55rem;
   }
-
-  .sourAleIntro > *:nth-child(1) {
-    margin-bottom: 3rem;
-    justify-content: center;
+  .sourAleInfoUl h2 {
+    font-size: 1.35rem;
   }
+  .sourAleLinkStyle {
+    font-size: 1.6rem;
+  }
+  .sourAleIntro img {
+    width: 170px;
+    height: 135px;
+  }
+}
 
-  .sourAleIntro h1 {
+@media (max-width: 923px) {
+  .sourAleContainer {
+    padding-top: 1.25rem;
+  }
+  .sourAleIntro {
+    margin-bottom: 1.5rem;
+  }
+  .sourAleIntro img {
+    width: 150px;
+    height: 120px;
+  }
+  .sourAleContainer p {
+    font-size: 0.95em;
+  }
+  .sourAleInfoUl li {
+    margin-bottom: 1.25rem;
+    font-size: 0.95em;
+  }
+  .sourAleInfoImg {
+    min-height: 650px;
+  }
+  .sourAleIntroText h1 {
     font-size: 1.5rem;
   }
-
-  .sourAleInfo > *:nth-child(1) {
-    padding: 9rem;
+  .sourAleInfoUl h2 {
+    font-size: 1.3rem;
   }
+}
 
-  .sourAleInfo h2 {
-    margin-bottom: 2rem;
-    font-size: 1.4rem;
-  }
-
-  .sourAleText .sourAleUlText {
-    font-size: 1em;
-  }
-
-  .sourAleText, .sourAleIntro h1, .sourAleInfo h2 {
+@media (max-width: 714px) {
+  .sourAleIntro {
+    justify-content: center;
     text-align: center;
+  }
+  .sourAleIntro img {
+    margin: 2.5rem 0 1.7rem 0;
+  }
+  .sourAleIntroText {
+    width: 80%;
+  }
+  .sourAleIntroText p {
+    margin-top: 0.75rem;
+  }
+  .sourAleInfo {
+    width: clamp(27ch, 70%, 34ch);
+    text-align: center;
+  }
+  .sourAleInfoImg {
+    min-height: 500px;
+    min-width: 20ch;
+  }
+  .sourAleInfoUl {
+    align-items: center;
+  }
+  .sourAleInfoUl h2 {
+    margin: 2.5rem 0;
+  }
+  .sourAleInfoUl li {
+    margin-left: 0;
+  }
+  .sourAleInfoUl ul li:last-child {
+    margin-bottom: 2.5rem;
   }
 }
