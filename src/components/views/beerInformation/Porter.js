@@ -1,11 +1,49 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 import classes from "./Porter.module.css";
 import beerLabel from "../../pictures/etikett milkshake.jpg";
 import background from "../../pictures/thumbnail_IMG_2202.jpg";
 
 const Porter = () => {
+  const [showButton, setShowButton] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setIsLoading(false);
+  }, []);
+
+  useEffect(() => {
+    if (!isLoading) {
+      const handelScroll = () => {
+        setShowButton(window.scrollY !== 0 && window.innerWidth <= 714);
+      };
+
+      window.addEventListener("scroll", handelScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handelScroll);
+      };
+    }
+  }, [isLoading]);
+
+  const toTheTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
+      <button
+        onClick={toTheTop}
+        className={classes.button}
+        style={{
+          display: showButton ? "block" : "none",
+          "@media (max-width: 714px)": { display: "block" },
+        }}
+      >
+        <IoIosArrowDropupCircle size={37} />
+      </button>
       <div className={classes.porterMain}>
         <div className={classes.porterLink}>
           <Link className={classes.porterLinkStyle} to="/mybeer">
