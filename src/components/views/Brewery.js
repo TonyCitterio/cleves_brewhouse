@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 import classes from "./Brewery.module.css";
 import brewZilla from "../pictures/brewzilla.jpeg";
 import clevesTomteishPorter from "../pictures/clevestomte-ishPorter.jpeg";
@@ -11,8 +13,36 @@ import carbonic from "../pictures/carbonic.jpg";
 import boil from "../pictures/boil.jpg";
 
 const Brewery = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY !== 0 && window.innerWidth <= 714);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toTheTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
+      <button
+        onClick={toTheTop}
+        className={classes.button}
+        style={{
+          display: showButton ? "block" : "none",
+          "@media (max-width: 714px)": { display: "block" },
+        }}
+      >
+        <IoIosArrowDropupCircle size={37} />
+      </button>
       <div className={classes.breweryContent}>
         <h1>Bryggeriet</h1>
         <div className={classes.gallery}>

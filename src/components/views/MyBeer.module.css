@@ -138,6 +138,16 @@
   box-shadow: #06aed5 0px 7px 15px;
 }
 
+.button {
+  all: unset;
+  position: fixed;
+  bottom: 15px;
+  right: 4px;
+  color: green;
+  border: none;
+  background-color: transparent;
+}
+
 @media (max-width: 1159px) {
   .myBeerImg {
     width: 328px;

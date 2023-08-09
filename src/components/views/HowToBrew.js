@@ -1,9 +1,39 @@
+import { useEffect, useState } from "react";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 import classes from "./HowToBrew.module.css";
 import ingredients from "../pictures/ingredients.jpeg";
 
 const HowToBrew = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY !== 0 && window.innerWidth <= 714);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toTheTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
+      <button
+        onClick={toTheTop}
+        className={classes.button}
+        style={{
+          display: showButton ? "block" : "none",
+          "@media (max-width: 714px)": { display: "block" },
+        }}
+      >
+        <IoIosArrowDropupCircle size={37} />
+      </button>
       <div className={classes.introHowToBrew}>
         <div>
           <img
@@ -16,10 +46,10 @@ const HowToBrew = () => {
           <div className={classes.introHowToBrewTextDiv}>
             <h1>Från idé till glas</h1>
             <p className={classes.howToBrewText}>
-              Vissa idéer är bara för konstiga för att inte testa. En
-              suröl gjord på julmust eller en julöl smaksatt med en rejäl mängd
-              skumtomtar. I ett nanobryggeri är batcherna små och
-              möjligheterna stora.
+              Vissa idéer är bara för konstiga för att inte testa. En suröl
+              gjord på julmust eller en julöl smaksatt med en rejäl mängd
+              skumtomtar. I ett nanobryggeri är batcherna små och möjligheterna
+              stora.
             </p>
           </div>
         </div>

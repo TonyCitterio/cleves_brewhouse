@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 import classes from "./MyBeer.module.css";
 import lager from "../pictures/dencleceskoldskalagern.jpeg";
 import beerOne from "../pictures/etikett tomte.jpg";
@@ -7,8 +9,36 @@ import beerThree from "../pictures/etikett lager.jpg";
 import beerFour from "../pictures/etikett milkshake.jpg";
 
 const MyBeer = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY !== 0 && window.innerWidth <= 714);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toTheTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
+      <button
+        onClick={toTheTop}
+        className={classes.button}
+        style={{
+          display: showButton ? "block" : "none",
+          "@media (max-width: 714px)": { display: "block" },
+        }}
+      >
+        <IoIosArrowDropupCircle size={37} />
+      </button>
       <div className={classes.introMyBeer}>
         <div>
           <img

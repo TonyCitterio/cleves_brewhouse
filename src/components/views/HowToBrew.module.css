@@ -96,6 +96,16 @@
   margin-bottom: 0.5rem;
 }
 
+.button {
+  all: unset;
+  position: fixed;
+  bottom: 15px;
+  right: 4px;
+  color: green;
+  border: none;
+  background-color: transparent;
+}
+
 @media (max-width: 1159px) {
   .ingredientsImg {
     height: 238px;
