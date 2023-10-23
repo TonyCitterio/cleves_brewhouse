@@ -218,3 +218,28 @@
     width: 170px;
   }
 }
+
+@media (hover: none) {
+  .myBeerLinkStyleOne img,
+  .myBeerLinkStyleTwo img,
+  .myBeerLinkStyleThree img,
+  .myBeerLinkStyleFour img {
+    transition: none;
+  }
+
+  .myBeerLinkStyleOne img:hover {
+    box-shadow: none;
+  }
+
+  .myBeerLinkStyleTwo img:hover {
+    box-shadow: none;
+  }
+
+  .myBeerLinkStyleThree img:hover {
+    box-shadow: none;
+  }
+
+  .myBeerLinkStyleFour img:hover {
+    box-shadow: none;
+  }
+}

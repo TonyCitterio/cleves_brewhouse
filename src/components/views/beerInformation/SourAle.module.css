@@ -210,3 +210,10 @@
     margin-bottom: 2.5rem;
   }
 }
+
+@media (hover: none) {
+  .sourAleLinkStyle:hover {
+    color: green;
+    text-shadow: none;
+  }
+}

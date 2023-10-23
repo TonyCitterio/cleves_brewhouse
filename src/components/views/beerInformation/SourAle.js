@@ -54,7 +54,7 @@ const SourAle = () => {
           <div className={classes.sourAleIntro}>
             <img src={beerLabel} alt="beer label"></img>
             <div className={classes.sourAleIntroText}>
-              <h1>Cleves Tomte-ish Porter</h1>
+              <h1>Cleves Surmust</h1>
               <p>
                 En öl gjord på en traditionell bas av malt men med ett tillskott
                 av koncentrerad julmust. Ölen får sin sura smak av en jäst som

@@ -210,3 +210,10 @@
     margin-bottom: 2.5rem;
   }
 }
+
+@media (hover: none) {
+  .porterLinkStyle:hover {
+    color: green;
+    text-shadow: none;
+  }
+}
